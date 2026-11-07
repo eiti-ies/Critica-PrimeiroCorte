@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mural de Críticas - Audiovisual II</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #f4f5f7;
+      color: #172b4d;
+      padding: 24px;
+    }
+
+    header {
+      max-width: 1700px;
+      margin: 0 auto 24px auto;
+      padding-bottom: 16px;
+      border-bottom: 2px solid #dfe1e6;
+    }
+
+    header h1 {
+      font-size: 24px;
+      font-weight: 700;
+      color: #091e42;
+      letter-spacing: -0.3px;
+    }
+
+    header p {
+      font-size: 14px;
+      color: #5e6c84;
+      margin-top: 4px;
+    }
+
+    /* Contêiner de rolagem horizontal */
+    .mural-wrapper {
+      width: 100%;
+      overflow-x: auto;
+      padding-bottom: 24px;
+    }
+
+    .mural-grid {
+      min-width: 1440px;
+      max-width: 1750px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      align-items: start;
+    }
+
+    .card-coluna {
+      background: #ffffff;
+      border: 1px solid #dfe1e6;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(9, 30, 66, 0.08);
+    }
+
+    .card-topo {
+      padding: 14px 16px;
+      background-color: #fafbfc;
+      border-bottom: 1px solid #ebecf0;
+    }
+
+    .card-topo h2 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #172b4d;
+    }
+
+    .card-imagem {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background-color: #ebecf0;
+      display: block;
+      object-fit: cover;
+    }
+
+    .card-corpo {
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .secao-titulo {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: #6b778c;
+      margin-bottom: 2px;
+    }
+
+    .comentario {
+      font-size: 13.5px;
+      line-height: 1.5;
+      color: #253858;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #f4f5f7;
+    }
+
+    .comentario:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .comentario strong {
+      color: #091e42;
+      display: inline-block;
+      margin-right: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Realização Audiovisual II - Crítica ao primeiro corte</h1>
+    <p>Painel comparativo de exercícios práticos da turma</p>
+  </header>
+
+  <div class="mural-wrapper">
+    <div class="mural-grid">
+
+      <!-- COLUNA 1 -->
+      <article class="card-coluna">
+        <div class="card-topo">
+          <h2>1. Filme Alfa</h2>
+        </div>
+        <img class="card-imagem" src="01boca.jpg" alt="Frame do Filme Boca">
+        <div class="card-corpo">
+          <div class="secao-titulo">Análises da Turma</div>
+          <div class="comentario"><strong>Crítica 01:</strong> A escolha da iluminação em chave baixa acentua o tom dramático do diálogo inicial.</div>
+          <div class="comentario"><strong>Crítica 02:</strong> O corte seco entre os planos de detalhe funcionou bem para gerar tensão imediata.</div>
+          <div class="comentario"><strong>Crítica 03:</strong> A mixagem de som mantém as frequências equilibradas na captação direta.</div>
+          <div class="comentario"><strong>Crítica 04:</strong> Boa continuidade de movimento no plano-sequência do corredor.</div>
+          <div class="comentario"><strong>Crítica 05:</strong> O enquadramento centralizado reforça o isolamento da personagem.</div>
+        </div>
+      </article>
+
+      <!-- COLUNA 2 -->
+      <article class="card-coluna">
+        <div class="card-topo">
+          <h2>2. Filme Beta</h2>
+        </div>
+        <img class="card-imagem" src="02estraviz.jpg" alt="Frame do Filme Estraviz">
+        <div class="card-corpo">
+          <div class="secao-titulo">Análises da Turma</div>
+          <div class="comentario"><strong>Crítica 01:</strong> O contraste de saturação entre os cenários demarca bem a passagem temporal.</div>
+          <div class="comentario"><strong>Crítica 02:</strong> A transição sonora antecipa a cena seguinte com precisão narrativa.</div>
+          <div class="comentario"><strong>Crítica 03:</strong> Uso expressivo da profundidade de campo rasa nos planos de reação.</div>
+          <div class="comentario"><strong>Crítica 04:</strong> O ritmo da montagem constrói um suspense progressivo adequado.</div>
+          <div class="comentario"><strong>Crítica 05:</strong> A gradação de cor valoriza a paleta dos figurinos de época.</div>
+        </div>
+      </article>
+
+      <!-- COLUNA 3 -->
+      <article class="card-coluna">
+        <div class="card-topo">
+          <h2>3. Filme Gama</h2>
+        </div>
+        <img class="card-imagem" src="03limiar.jpg" alt="Frame do Filme Limiar-4">
+        <div class="card-corpo">
+          <div class="secao-titulo">Análises da Turma</div>
+          <div class="comentario"><strong>Crítica 01:</strong> Trabalho rigoroso de enquadramento na câmera fixa.</div>
+          <div class="comentario"><strong>Crítica 02:</strong> O tratamento dos tons de pele preservou a naturalidade no primeiro plano.</div>
+          <div class="comentario"><strong>Crítica 03:</strong> O silêncio diegético amplia a sensação de tensão na conversa final.</div>
+          <div class="comentario"><strong>Crítica 04:</strong> Montagem alternada bem articulada entre os dois núcleos.</div>
+          <div class="comentario"><strong>Crítica 05:</strong> Dinâmica vocal nítida apesar das condições acústicas da locação externa.</div>
+        </div>
+      </article>
+
+      <!-- COLUNA 4 -->
+      <article class="card-coluna">
+        <div class="card-topo">
+          <h2>4. Filme Delta</h2>
+        </div>
+        <img class="card-imagem" src="04mdts.jpg" alt="Frame do Filme Morrer, Dormir, Talvez Sonhar">
+        <div class="card-corpo">
+          <div class="secao-titulo">Análises da Turma</div>
+          <div class="comentario"><strong>Crítica 01:</strong> Primeiro queria parabenizar a equipe do curta, eu adorei o poema e as inserções de arquivos de vídeos.<br><br>
+Acredito que vocês conseguiram passar a mensagem que desejavam, se o sentimento for de um cansaço extremo com a vida atual e uma desconexão com o eu do passado e as felicidades que ele vivia.<br><br>
+Eu acho que é possível deixar essa mensagem mais potente pela montagem. Para mim, a abertura que vai até 1:30 ela traz de forma muito amena o tema e não prende muito a atenção do espectador, porque tem um formato muito usado de localizar o ambiente com os cortes do cenário e depois mostrar a personagem acordando, então eu tiraria toda essa cena do começo.<br><br>
+Pensei que pode ser uma boa ideia já começar o curta com uma cena mais impactante que faça a gente sentir o que ela sente. A cena que eu achei que mais representa o curta é ela comendo leite ninho, porque senti como se ela estivesse mastigando algo difícil de engolir. Acho que é interessante também porque seria um olhar ao que vai acontecer mais a frente no curta, e perderia também essa organização clássica do filme de começo, meio e fim. Provavelmente vocês teriam que mudar outras partes da montagem com essa mudança de início, mas acho que valeria o teste..</div>
+          <div class="comentario"><strong>Crítica 02:</strong> Ao assistir a “Morrer, Dormir, Talvez Sonhar", tive uma experiência bastante positiva. Acredito que o filme trabalha com uma temática que conversa diretamente com o público universitário, especialmente com os jovens que estão passando por esse momento de transição entre a infância/adolescência e a vida adulta. A sensação de olhar para o passado e sentir que aqueles momentos eram mais felizes, acolhedores e simples, é algo bastante presente nessa fase da vida. A personagem está vivendo um momento de solidão e tristeza, enquanto suas lembranças nos apresentam uma infância marcada por brincadeiras, encontros familiares, festas e momentos de felicidade.<br><br>
+Um dos aspectos que mais me chamou a atenção foi a combinação entre presente da personagem e suas memórias. Acompanhá-la andando pela casa, passando de um cômodo para outro, observando o ambiente bagunçado e até mesmo a falta de energia, que a deixa sozinha à luz de uma vela, ajuda a construir uma sensação de isolamento. É quase como se a própria casa manifestasse o estado emocional da personagem. Além disso, gostei da escolha de trabalhar seus pensamentos de maneira poética, sem recorrer a diálogos convencionais. Essa característica dá uma identidade interessante ao filme, embora tenha sentido falta de elementos na direção de arte que reforçassem um pouco mais esse lado poético personagem.<br><br>
+Entretanto, acredito que o maior potencial da montagem está nos flashbacks. São justamente esses momentos que mais me conectaram com o filme. As lembranças da infância possuem uma brasilidade muito forte: a decoração de aniversário, as bexigas cheias de balas e doces, as pessoas cantando parabéns e a personagem criança mexendo nas panelas da cozinha. São imagens muito familiares para o público brasileiro e que despertam uma identificação afetiva bastante interessante. Por isso, gostaria de ver um cuidado maior na duração e na articulação desses fragmentos. Em alguns momentos, as memórias aparecem de maneira muito rápida e abrupta, dificultando a compreensão do que está acontecendo. Entendo que essa fragmentação possa ser intencional, representando-a maneira como as lembranças surgem na mente da personagem, mas será que alguns desses momentos não poderiam respirar um pouco mais? Será que dar mais tempo para determinadas imagens não ajudaria o espectador a sentir essa nostalgia junto com ela? Acredito que esse refinamento seja especialmente importante porqueiros flashes são o elemento que mais diferencia a experiência visual do filme.<br><br>
+Outro ponto que me chamou a atenção foi a fotografia do presente. Compreendo a escolha de uma imagem mais cinzenta, lavada e apática para representar o estado emocional da personagem, mas em alguns momentos senti que essa característica ficou excessivamente explícita, como se o filme precisasse reforçar constantemente o quanto ela está triste. Talvez seja uma questão que possa ser trabalhada na pós-produção, buscando um equilíbrio maior.<br><br>
+Por fim, gostei bastante do encerramento, especialmente da combinação entre o choro da personagem e o retorno das lembranças. O choro funciona como uma forma de expressar aquilo que ela não consegue verbalizar, enquanto as memórias coloridas retornam à montagem. É um momento simples, mas que considero bastante funcional emocionalmente.<br><br>
+Pensando no limite de seis minutos, acredito que o caminho mais interessante seria observar a duração de alguns planos e a repetição de informações na passagem da personagem pelos cômodos da casa, procurando possíveis condensações sem comprometer a construção de sua solidão. Minha principal preocupação, porém, não seria simplesmente acelerar ou reduzir o filme, mas preservar aquilo que ele tem de mais interessante: a relação entre o presente melancólico e as lembranças afetivas da infância. No geral, gostei da proposta e acredito que o filme tem uma ideia muito bonita, com potencial para gerar uma identificação genuína com seu público.</div>
+          <div class="comentario"><strong>Crítica 03:</strong> Raccord de olhar preciso entre os personagens em cena.</div>
+          <div class="comentario"><strong>Crítica 04:</strong> O arco narrativo fecha de forma coesa com a premissa inicial.</div>
+          <div class="comentario"><strong>Crítica 05:</strong> Edição concisa sem planos excedentes ou redundâncias.</div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+</body>
+</html>
