@@ -23,6 +23,17 @@
       margin: 0 auto 24px auto;
       padding-bottom: 16px;
       border-bottom: 2px solid #373b44;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 24px;
+    }
+
+    .header-logo {
+      height: 72px; /* Ajuste a altura se quiser maior ou menor */
+      width: auto;
+      display: block;
+      opacity: 0.85; /* Deixa a logo harmonizada com o tema escuro */
     }
 
     header h1 {
@@ -125,8 +136,11 @@
 <body>
 
   <header>
-    <h1>Realização Audiovisual II - Crítica ao primeiro corte</h1>
-    <p>2026.2</p>
+    <div>
+      <h1>Realização Audiovisual II - Crítica ao primeiro corte</h1>
+      <p>2026.2</p>
+    </div>
+    <img class="header-logo" src="Marca IS para fundo preto.png" alt="Logomarca Imagem e Som">
   </header>
 
   <div class="mural-wrapper">
